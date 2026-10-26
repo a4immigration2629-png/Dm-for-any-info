@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#063b2e">
+<meta name="description" content="മലയാളത്തിൽ പരമ്പരാഗത ജ്യോതിഷ മാർഗനിർദ്ദേശം. കൂടുതൽ വിവരങ്ങൾക്ക് സന്ദേശമയയ്ക്കുക.">
+<title>ജ്യോതിഷ മാർഗനിർദ്ദേശം | മലയാളത്തിൽ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #063b2e;
+  --dark: #02251c;
+  --gold: #f5d35e;
+  --cream: #fff9e8;
+  --text: #153d30;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--dark);
+  color: var(--cream);
+  font-family: 'Noto Sans Malayalam', sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+header {
+  padding: 15px 0;
+  background: #032b22;
+  border-bottom: 1px solid #d9b64b55;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+}
+
+.hero {
+  padding: 55px 0;
+  background:
+    radial-gradient(circle at 85% 10%, #176044, transparent 32%),
+    linear-gradient(135deg, #063b2e, #021e18);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.35;
+  margin: 15px 0;
+}
+
+h1 span {
+  color: var(--gold);
+}
+
+.lead {
+  color: #e5eee8;
+  font-size: 1.08rem;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid var(--gold);
+  box-shadow: 0 18px 50px #0005;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.gold-btn {
+  background: var(--gold);
+  color: var(--text);
+}
+
+.outline-btn {
+  border-color: var(--gold);
+  color: white;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+.light-section {
+  background: var(--cream);
+  color: var(--text);
+}
+
+.section h2 {
+  text-align: center;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #526c5e;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: #fffdf4;
+  border: 1px solid #eddfad;
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  background: var(--green);
+  border: 3px solid var(--gold);
+  color: var(--gold);
+  font-size: 27px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: #526c5e;
+  font-size: .92rem;
+}
+
+.disclaimer {
+  max-width: 780px;
+  margin: 25px auto 0;
+  text-align: center;
+  font-size: .83rem;
+  color: #526c5e;
+}
+
+.contact {
+  text-align: center;
+  padding: 55px 0;
+  background: linear-gradient(135deg, #064431, #021f18);
+}
+
+.contact p {
+  max-width: 650px;
+  margin: 0 auto 24px;
+  color: #e1eee5;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-buttons .btn {
+  min-width: 220px;
+}
+
+.instagram-btn {
+  background: var(--gold);
+  color: var(--text);
+}
+
+.snapchat-btn {
+  background: white;
+  color: #183a2d;
+}
+
+footer {
+  padding: 22px 0;
+  text-align: center;
+  font-size: .8rem;
+  color: #c4d9cc;
+  border-top: 1px solid #ffffff1a;
+}
+
+/* വലിയ DM പോപ്പ്അപ്പ് */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: #00160fe8;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .25s, visibility .25s;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: relative;
+  width: min(460px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px 24px;
+  text-align: center;
+  border: 2px solid var(--gold);
+  border-radius: 25px;
+  background: linear-gradient(150deg, #0b4b38, #02261e);
+  box-shadow: 0 25px 90px #0009;
+  transform: translateY(15px);
+  transition: transform .25s;
+}
+
+.show .modal {
+  transform: translateY(0);
+}
+
+.modal-icon {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--green);
+  font-size: 32px;
+}
+
+.modal h2 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.modal p {
+  color: #e0eee5;
+  margin-bottom: 18px;
+}
+
+.modal .btn {
+  width: 100%;
+  margin: 6px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 4px 10px;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.reopen-btn {
+  position: fixed;
+  z-index: 900;
+  right: 16px;
+  bottom: 16px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--text);
+  font: 800 .95rem 'Noto Sans Malayalam', sans-serif;
+  box-shadow: 0 6px 25px #0004;
+  cursor: pointer;
+}
+
+.reopen-btn[hidden] {
+  display: none;
+}
+
+.small-note {
+  font-size: .75rem;
+  margin: 14px 0 0 !important;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 35px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .hero-image {
+    max-width: 520px;
+    margin: auto;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 42px 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons .btn,
+  .social-buttons .btn {
+    width: 100%;
+  }
+
+  .modal {
+    padding: 30px 18px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container brand">
+    <span class="brand-icon">☼</span>
+    <span>ജ്യോതിഷ മാർഗനിർദ്ദേശം</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="eyebrow">
+          ✦ മലയാളത്തിൽ പരമ്പരാഗത ജ്യോതിഷ മാർഗനിർദ്ദേശം ✦
+        </div>
+
+        <h1>
+          നിങ്ങളുടെ ചോദ്യങ്ങൾക്ക്
+          <span>ജ്യോതിഷ</span>
+          കാഴ്ചപ്പാടുകൾ
+        </h1>
+
+        <p class="lead">
+          ജീവിതം, ബന്ധങ്ങൾ, തൊഴിൽ, കുടുംബം തുടങ്ങിയ വിഷയങ്ങളിൽ
+          പരമ്പരാഗത ജ്യോതിഷ കാഴ്ചപ്പാടുകൾ അറിയാൻ സന്ദേശമയയ്ക്കൂ.
+        </p>
+
+        <div class="buttons">
+          <a class="btn gold-btn" href="#contact">
+            ✉ സന്ദേശമയയ്ക്കുക
+          </a>
+
+          <a class="btn outline-btn" href="#services">
+            സേവനങ്ങൾ കാണുക ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="poster-astrology.png"
+          alt="മലയാളത്തിലുള്ള ജ്യോതിഷ മാർഗനിർദ്ദേശ പോസ്റ്റർ"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section light-section" id="services">
+    <div class="container">
+
+      <h2>ഏത് വിഷയത്തെക്കുറിച്ചാണ് അറിയേണ്ടത്?</h2>
+
+      <p class="intro">
+        നിങ്ങൾക്ക് താൽപര്യമുള്ള വിഷയം തിരഞ്ഞെടുക്കുക.
+        കൂടുതൽ വിവരങ്ങൾക്ക് നേരിട്ട് സന്ദേശമയയ്ക്കാം.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">♡</div>
+          <h3>ബന്ധങ്ങളും കുടുംബവും</h3>
+          <p>ബന്ധങ്ങളെക്കുറിച്ചുള്ള പരമ്പരാഗത ജ്യോതിഷ കാഴ്ചപ്പാടുകൾ.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">▣</div>
+          <h3>തൊഴിലും ജോലിയും</h3>
+          <p>തൊഴിൽ സംബന്ധമായ ചോദ്യങ്ങൾ ചർച്ച ചെയ്യാം.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">₹</div>
+          <h3>ധനകാര്യ ചിന്തകൾ</h3>
+          <p>സാമ്പത്തിക വിഷയങ്ങളെക്കുറിച്ചുള്ള പൊതുവായ കാഴ്ചപ്പാടുകൾ.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⌂</div>
+          <h3>വീട്, കുടുംബജീവിതം</h3>
+          <p>വീട്, കുടുംബം, ജീവിതത്തിലെ മാറ്റങ്ങൾ തുടങ്ങിയ വിഷയങ്ങൾ.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">❋</div>
+          <h3>മാനസിക സമാധാനം</h3>
+          <p>ആത്മപരിശോധനയ്ക്കും വ്യക്തിപരമായ ചിന്തകൾക്കും ഇടം.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">☼</div>
+          <h3>വ്യക്തിഗത മാർഗനിർദ്ദേശം</h3>
+          <p>നിങ്ങളുടെ ചോദ്യങ്ങൾ സന്ദേശത്തിലൂടെ പങ്കുവയ്ക്കാം.</p>
+        </article>
+
+      </div>
+
+      <p class="disclaimer">
+        ജ്യോതിഷം ഒരു പരമ്പരാഗത വിശ്വാസ-സാംസ്കാരിക രീതിയാണ്.
+        ഫലങ്ങൾ ഉറപ്പുനൽകാനാവില്ല. പ്രധാനപ്പെട്ട ആരോഗ്യ, നിയമ,
+        സാമ്പത്തിക തീരുമാനങ്ങൾക്ക് യോഗ്യരായ വിദഗ്ധരുടെ ഉപദേശം തേടുക.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <h2>കൂടുതൽ വിവരങ്ങൾ അറിയണോ?</h2>
+
+      <p>
+        നിങ്ങൾക്ക് സൗകര്യമുള്ള പ്ലാറ്റ്ഫോം തിരഞ്ഞെടുക്കൂ.
+        നേരിട്ട് സന്ദേശമയച്ച് നിങ്ങളുടെ ചോദ്യം പങ്കുവയ്ക്കാം.
+      </p>
+
+      <div class="social-buttons">
+
+        <a
+          class="btn instagram-btn"
+          href="https://ig.me/m/__rudra__swami_"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ◎ ഇൻസ്റ്റാഗ്രാമിൽ DM ചെയ്യുക
+        </a>
+
+        <a
+          class="btn snapchat-btn"
+          href="https://www.snapchat.com/add/user162167087?share_id=fPcS3oa3l7M&amp;locale=en-IN"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          👻 സ്നാപ്ചാറ്റിൽ സന്ദേശമയയ്ക്കുക
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    ജ്യോതിഷം പരമ്പരാഗത മാർഗനിർദ്ദേശത്തിനായി മാത്രം.
+    ഫലങ്ങൾ ഉറപ്പുനൽകുന്നില്ല.
+  </div>
+</footer>
+
+<!-- പോപ്പ്അപ്പ് വീണ്ടും തുറക്കാനുള്ള ബട്ടൺ -->
+
+<button
+  class="reopen-btn"
+  id="reopen"
+  type="button"
+  hidden
+>
+  സന്ദേശമയയ്ക്കുക
+</button>
+
+<!-- വലിയ DM പോപ്പ്അപ്പ് -->
+
+<div
+  class="modal-backdrop"
+  id="dmModal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
+  <div class="modal">
+
+    <button
+      class="close-btn"
+      id="closeModal"
+      type="button"
+      aria-label="അടയ്ക്കുക"
+    >
+      ×
+    </button>
+
+    <div class="modal-icon">✉</div>
+
+    <h2 id="modalTitle">
+      കൂടുതൽ വിവരങ്ങൾക്ക്
+      ഇപ്പോൾ സന്ദേശമയയ്ക്കൂ
+    </h2>
+
+    <p>
+      ഇൻസ്റ്റാഗ്രാം അല്ലെങ്കിൽ സ്നാപ്ചാറ്റ് തിരഞ്ഞെടുക്കാം.
+    </p>
+
+    <a
+      class="btn instagram-btn"
+      href="https://ig.me/m/__rudra__swami_"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ◎ ഇൻസ്റ്റാഗ്രാമിൽ DM ചെയ്യുക
+    </a>
+
+    <a
+      class="btn snapchat-btn"
+      href="https://www.snapchat.com/add/user162167087?share_id=fPcS3oa3l7M&amp;locale=en-IN"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      👻 സ്നാപ്ചാറ്റിൽ സന്ദേശമയയ്ക്കുക
+    </a>
+
+    <p class="small-note">
+      കൂടുതൽ വിവരങ്ങൾക്ക് നിങ്ങളുടെ ചോദ്യം സന്ദേശമായി അയയ്ക്കൂ.
+    </p>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  const modal = document.getElementById('dmModal');
+  const closeButton = document.getElementById('closeModal');
+  const reopenButton = document.getElementById('reopen');
+
+  function showModal() {
+    modal.classList.add('show');
+    reopenButton.hidden = true;
+    closeButton.focus();
+  }
+
+  function hideModal() {
+    modal.classList.remove('show');
+    reopenButton.hidden = false;
+    reopenButton.focus();
+  }
+
+  closeButton.addEventListener('click', hideModal);
+
+  reopenButton.addEventListener('click', showModal);
+
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      hideModal();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (
+      event.key === 'Escape' &&
+      modal.classList.contains('show')
+    ) {
+      hideModal();
+    }
+  });
+
+  // പേജ് തുറന്നതിന് ശേഷം പോപ്പ്അപ്പ് കാണിക്കുക
+  window.setTimeout(showModal, 900);
+})();
+</script>
+
+</body>
+</html>
